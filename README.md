@@ -10,23 +10,19 @@ Once the accounts are acitvated, local eduroam admins can manage their eduroam l
 ## Installation Considerations
 [![Documentation Status](https://readthedocs.org/projects/djnro/badge/?version=latest)](https://readthedocs.org/projects/djnro/?badge=latest)
 
-You can find the installation instructions for Debian Wheezy (64)
-with Django 1.4.x at [Djnro documentation](http://djnro.readthedocs.org).
-If upgrading from a previous version bear in mind the changes introduced in Django 1.4.
+You can find the installation and upgrade instructions at [DjNRO documentation](http://djnro.readthedocs.org).
 
 ## Contact
 
-You can find more about Djnro or raise your issues at [GRNET Djnro
-repository](https://code.grnet.gr/djnro), [GRNET Djnro Github repository](https://github.com/grnet/djnro), [Djnro mailing list](https://lists.grnet.gr/wws/info/djnro) or [GRNET Djnro minisite](http://djnro.grnet.gr/).
+You can find more about DjNRO, ask questions and report issues at [GRNET DjNRO GitHub repository](https://github.com/grnet/djnro), [DjNRO mailing list](https://lists.grnet.gr/wws/info/djnro) or [GRNET DjNRO minisite](http://djnro.grnet.gr/).
 
 ## LICENCE
-Copyright © 2011-2015 Greek Research and Technology Network (GRNET S.A.)
+Copyright © 2011-2016 Greek Research and Technology Network (GRNET S.A.)
 
-Developed by Leonidas Poulopoulos (leopoul-at-noc-dot-grnet-dot-gr),
-Zenon Mousmoulas (zmousm-at-noc-dot-grnet-dot-gr) and Stavros Kroustouris
-(staurosk-at-noc-dot-grnet-dot-gr), GRNET NOC
+Developed by Leonidas Poulopoulos, Zenon Mousmoulas, Stavros
+Kroustouris, Sergios Aftsidis, GRNET NOC
 
-Contributions by Jamie Curtis, REANNZ
+Contributions by Jamie Curtis and Vladimir Mencl, REANNZ
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above

@@ -37,11 +37,13 @@ class ServerDataReader:
         if re.match(r"^https?://", self.src) is not None:
             try:
                 resp = requests.get(src)
-            except ConnectionError:
+            except requests.ConnectionError:
                 exit_with_error("Connection failed for %s" % src)
             if resp.status_code > 304 or not resp.ok:
                 exit_with_error("Fetch failed from %s" % src)
             self.rawdata = resp.text
+        elif self.src == "-":
+            self.rawdata = sys.stdin.read()
         else:
             try:
                 with open(src, "r") as f:
@@ -125,7 +127,7 @@ directory (may be used more than once) [default: %s]"""
                             help="""generate %(dest)s output
 (write to %(metavar)s or stdout)""",
                             nargs='?',
-                            type=argparse.FileType('w'),
+                            type=argparse.FileType('wb'),
                             const=sys.stdout,
                             default=None)
     opts = parser.parse_args()
@@ -154,8 +156,15 @@ directory (may be used more than once) [default: %s]"""
 
     for t in SETTINGS["templates"]:
         to = t.replace('-', '_')
-        if getattr(opts, to, None) is not None:
-            getattr(opts, to).write(sw.render_tpl(t))
+        tof = getattr(opts, to)
+        if tof is None:
+            continue
+        if tof.name == '<stdout>':
+            try:
+                tof = tof.buffer # PY3
+            except AttributeError:
+                pass
+        tof.write(sw.render_tpl(t))
 
 if __name__ == "__main__":
     main()

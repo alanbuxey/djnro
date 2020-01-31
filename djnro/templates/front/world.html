@@ -8,15 +8,21 @@
 
 
 {% block content %}
-<h1>{% trans "Eduroam Worldwide" %}</h1>
+<h1>{% trans "eduroam worldwide" %}</h1>
 <hr>
 
-<div id="map_canvas" data-center-lat="{{ MAP_CENTER.0 }}" data-url="{% url worldPoints %}" data-city="{% static 'img/city.png' %}" data-country="{% static 'img/country.png' %}" data-group="{% static 'img/edugroup.png' %}" data-pin="{% static 'img/edupin.png' %}" data-center-lng="{{ MAP_CENTER.1 }}" style="width:100%; height:600px; overflow: hidden;"></div>
+<div id="map_canvas" data-center-lat="{{ MAP_CENTER.0 }}" data-url="{% url 'worldPoints' %}" data-city="{% static 'img/city.png' %}" data-country="{% static 'img/country.png' %}" data-group="{% static 'img/edugroup.png' %}" data-pin="{% static 'img/edupin.png' %}" data-center-lng="{{ MAP_CENTER.1 }}" style="width:100%; height:600px; overflow: hidden;"></div>
 {% endblock %}
 
 
+{% block extrahead %}
+<link href="{% static 'css/mapescape.css' %}" rel="stylesheet">
+{% endblock %}
+
 {% block extrajs %}
 <script type="text/javascript" src="{% static 'js/markerclusterer.js' %}"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&amp;region={{COUNTRY_CODE}}{% if GOOGLE_MAPS_API_KEY %}&amp;key={{ GOOGLE_MAPS_API_KEY }}{% endif %}"></script>
+<script type="text/javascript" src="{% static 'js/jquery.adapt_height.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/mapescape.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/world-map.js' %}"></script>
 {% endblock %}

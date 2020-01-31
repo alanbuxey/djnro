@@ -1,3 +1,4 @@
+# encoding=utf-8
 # -*- coding: utf-8 -*- vim:encoding=utf-8:
 # vim: tabstop=4:shiftwidth=4:softtabstop=4:expandtab
 import warnings
@@ -5,51 +6,58 @@ warnings.simplefilter("ignore", DeprecationWarning)
 import sys
 import locale
 import codecs
-# sort greek utf-8 properly
-locale.setlocale(locale.LC_COLLATE, ('el_GR', 'UTF8'))
-# https://wiki.python.org/moin/PrintFails
-sys.stdout = codecs.getwriter(locale.getpreferredencoding())(sys.stdout)
+# Printing unicode: WAS: https://wiki.python.org/moin/PrintFails
+# But now rather follow:
+#    https://docs.djangoproject.com/en/1.9/howto/custom-management-commands/#management-commands-and-locales
+# I.e., set leave_locale_alone and let the system locale handle things.
+# Django 1.8 now uses unicode by default - so all works well without modifying the codecs.
 
 from optparse import make_option
 from django.core.management.base import BaseCommand
-from django.contrib.auth.models import User
+from accounts.models import User
+from django.utils.translation import get_language, to_locale, ugettext as _
+from utils.locale import setlocale, compat_strxfrm
 
 
 class Command(BaseCommand):
-    option_list = BaseCommand.option_list + (
-        make_option(
+
+    help = 'Prints institution contacts in CSV format'
+
+    leave_locale_alone = True
+
+    def add_arguments(self, parser):
+        parser.add_argument(
             '--mail-list',
             action='store_true',
             dest='maillist',
             default=False,
             help='Return only emails (output suitable for a mailing list)'
-        ),
-    )
-    args = ''
-    help = 'Prints institution contacts in CSV format'
+        )
 
     def handle(self, *args, **options):
         users = User.objects.all()
         if not options['maillist']:
             self.stdout.write(
-                u'"%s","%s","%s"' % (
-                    u"Φορέας",
-                    u"Διαχειριστής",
+                u'{},{},{}'.format(
+                    _('Institution'),
+                    _('Administrator'),
                     "email"
                 )
                 + "\n"
             )
         data = [
             (
-                u.get_profile().institution.get_name('el'),
+                u.userprofile.institution.get_name(get_language()),
                 u.first_name + " " + u.last_name,
                 m
             ) for u in users if (
-                len(u.registrationprofile_set.all()) > 0
-                and u.registrationprofile_set.all()[0].activation_key == "ALREADY_ACTIVATED"
+                u.registrationprofile
+                and u.registrationprofile.activation_key == "ALREADY_ACTIVATED"
             ) for m in u.email.split(';')
         ]
-        data.sort(key=lambda d: unicode(d[0]))
+        with setlocale((to_locale(get_language()), 'UTF-8'),
+                       locale.LC_COLLATE):
+            data.sort(key=lambda d: compat_strxfrm(d[0]))
         for (foreas, onoma, email) in data:
             if options['maillist']:
                 self.stdout.write(

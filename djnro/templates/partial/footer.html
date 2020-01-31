@@ -1,15 +1,35 @@
 {% load i18n %}
-<footer {% if user.is_authenticated %}class="auth"{% endif %}>
-    <div class="container">
-    	{% if user.is_authenticated %}
-    		{% trans "If you have any questions or need help, contact" %} {{DOMAIN_HELPDESK_DICT.name}} (<a href="{{DOMAIN_HELPDESK_DICT.uri}}">{{DOMAIN_HELPDESK_DICT.uri}}</a>) - {{DOMAIN_HELPDESK_DICT.phone}}</br>
-    	{% endif %}
-    	{% trans "This is a service provided by" %} <a href="{{PROV_TEAM.url}}" target="_blank">{{PROV_TEAM.name}}</a>
-    	{% for media in SOCIAL_MEDIA_LIST %}
-    		<a href="{{media.url}}" target="_blank">
-    			<i class="{{media.icon}}"></i>
-    		</a>
-    	{% endfor %}
-    	Powered by <a href="http://djnro.grnet.gr/" target="_blank">DjNRO</a> v{{VERSION}}
+{% load template_maybe %}
+{% load staticfiles %}
+{% load tolocale %}
+
+<footer class="stickyfooter">
+    <div>
+        <div class="container">
+            {% if user.is_authenticated %}
+                {% trans "If you have any questions or need help, contact" %} {{ BRANDING.helpdesk.name|tolocale:LANGUAGE_CODE }} (<a href="{{ BRANDING.helpdesk.uri}}">{{BRANDING.helpdesk.uri}}</a>) - {{BRANDING.helpdesk.phone}}<br>
+            {% endif %}
+            {% trans "This is a service provided by" %} <a href="{{ BRANDING.service_provider.url}}" target="_blank">{{BRANDING.service_provider.name|tolocale:LANGUAGE_CODE}}</a>
+            {% for media in BRANDING.social_media %}
+                <a href="{{media.url}}" target="_blank">
+		{% if media.local_image %}
+                    <img src="{% static media.local_image %}" style="padding: 0px;">
+                {% comment "backwards compatibility: local_image == icon" %}{% endcomment %}
+                {% elif media.icon %}
+                    <img src="{% static media.icon %}" style="padding: 0px;">
+		{% elif media.image_url %}
+                    <img src="{{ media.image_url }}" style="padding: 0px;">
+		{% elif media.fa_style %}
+                    <i class="fa {{ media.fa_style }}"></i>
+		{% endif %}
+                </a>
+            {% endfor %}
+            <br>Powered by <a href="http://djnro.grnet.gr/" target="_blank">DjNRO</a> v{{VERSION}}
+            {% if "partial/extra.footer.html"|template_exists %}
+            <div class="">
+                {% include_maybe "partial/extra.footer.html" %}
+            </div>
+            {% endif %}
+        </div>
     </div>
 </footer>

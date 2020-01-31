@@ -9,16 +9,16 @@ from edumanage.models import InstServer, Institution
 
 
 class Command(BaseCommand):
-    option_list = BaseCommand.option_list + (
-        make_option(
+
+    help = "Exports server data"
+
+    def add_arguments(self, parser):
+        parser.add_argument(
             '--output',
             dest='output',
             default="yaml",
             help="Output type: json, yaml"
-        ),
-    )
-    args = ''
-    help = "Exports server data"
+        )
 
     def handle(self, *args, **options):
         if options['output'] == "yaml":
@@ -105,7 +105,7 @@ def servdata():
             inst_dict['id'] = inst.institutiondetails.oper_name
         inst_dict['type'] = inst.ertype
         if inst.ertype in (2, 3):
-            inst_clients = inst.instserver_set.filter(ertype__in=[2, 3])
+            inst_clients = inst.servers.filter(ertype__in=[2, 3])
             if inst_clients:
                 inst_dict['clients'] = [srv_identifier(srv, "client_") for
                                         srv in inst_clients]

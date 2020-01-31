@@ -18,14 +18,14 @@ from edumanage.models import (
     CatEnrollment
 )
 
-from django.contrib.contenttypes import generic
+from django.contrib.contenttypes import admin as contenttype_admin
 
 
-class NameInline(generic.GenericTabularInline):
+class NameInline(contenttype_admin.GenericTabularInline):
     model = Name_i18n
 
 
-class UrlInline(generic.GenericTabularInline):
+class UrlInline(contenttype_admin.GenericTabularInline):
     model = URL_i18n
 
 
@@ -33,19 +33,23 @@ class InstitutionAdmin(admin.ModelAdmin):
     inlines = [
         NameInline,
     ]
+    list_filter = ('ertype',)
 
 
 class InstitutionDetailsAdmin(admin.ModelAdmin):
     inlines = [
         UrlInline,
     ]
+    list_filter = ('institution__ertype',)
 
 
 class ServiceLocAdmin(admin.ModelAdmin):
     list_display = ('get_name', 'institutionid')
     inlines = [
-        NameInline,
+        UrlInline, NameInline,
     ]
+    list_filter = ('SSID', 'enc_level', 'port_restrict',
+                   'transp_proxy', 'IPv6', 'NAT', 'wired')
 
 
 class RealmInLine(admin.ModelAdmin):
@@ -56,20 +60,34 @@ class RealmInLine(admin.ModelAdmin):
 
 class InstRealmAdmin(admin.ModelAdmin):
     list_display = ('realm', 'instid')
+    list_filter = ('instid__ertype',)
+
+
+class InstServerAdmin(admin.ModelAdmin):
+    list_filter = ('ertype',)
+
+
+class InstRealmMonAdmin(admin.ModelAdmin):
+    list_filter = ('mon_type',)
+
+
+class MonLocalAuthnParamAdmin(admin.ModelAdmin):
+    list_filter = ('eap_method', 'phase2')
 
 
 class CatEnrollmentAdmin(admin.ModelAdmin):
-    list_display = ('__unicode__', 'cat_active')
+    list_display = ('__str__', 'cat_active')
+    list_filter = ('cat_instance',)
 
 admin.site.register(Name_i18n)
 admin.site.register(Contact)
 admin.site.register(InstitutionContactPool)
 admin.site.register(URL_i18n)
 admin.site.register(InstRealm, InstRealmAdmin)
-admin.site.register(InstServer)
-admin.site.register(InstRealmMon)
+admin.site.register(InstServer, InstServerAdmin)
+admin.site.register(InstRealmMon, InstRealmMonAdmin)
 admin.site.register(MonProxybackClient)
-admin.site.register(MonLocalAuthnParam)
+admin.site.register(MonLocalAuthnParam, MonLocalAuthnParamAdmin)
 admin.site.register(ServiceLoc, ServiceLocAdmin)
 admin.site.register(Institution, InstitutionAdmin)
 admin.site.register(InstitutionDetails, InstitutionDetailsAdmin)
@@ -86,9 +104,9 @@ from tinymce.widgets import TinyMCE
 class TinyMCEFlatPageAdmin(FlatPageAdmin):
     def formfield_for_dbfield(self, db_field, **kwargs):
         if db_field.name == 'content':
-            return forms.CharField(widget=TinyMCE(
+            return db_field.formfield(widget=TinyMCE(
                 attrs={'cols': 80, 'rows': 30},
-                mce_attrs={'external_link_list_url': reverse('tinymce.views.flatpages_link_list')},
+                mce_attrs={'external_link_list_url': reverse('tinymce-linklist')},
             ))
         return super(TinyMCEFlatPageAdmin, self).formfield_for_dbfield(db_field, **kwargs)
 

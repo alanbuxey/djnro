@@ -3,9 +3,6 @@
 {% load staticfiles %}
 
 
-{% block homeactive %}{% endblock %}
-{% block realmsactive %}class="active"{% endblock %}
-
 {% block management_content %}
 <h4>{% if edit %}{{form.instance.realm}} ({% trans "edit" %}){% else %}{% trans "Add Realm" %}{% endif %}</h4>
 <hr>
@@ -31,7 +28,7 @@
 		<label class="control-label" for="id_realm"><b>{% trans "Realm" %}</b></label>
 		<div class="controls">
 			{{ form.realm }}
-			{% if form.realm.errors %} <span class="help-inline"> {{ form.realm.errors|join:", " }} </span>
+			{% if form.realm.errors %} <div class="alert-danger"> {{ form.realm.errors|join:", " }} </div>
 			{% endif %} <span class="help-block"> {{ form.realm.help_text }}</span>
 		</div>
 	</div>
@@ -39,7 +36,7 @@
 		<label class="control-label" for="id_proxyto"><b>{% trans "Proxy to Servers" %}</b></label>
 		<div class="controls">
 			{{ form.proxyto }}
-			{% if form.proxyto.errors %}<span class="help-inline"> {{ form.proxyto.errors|join:", " }} </span>
+			{% if form.proxyto.errors %} <div class="alert-danger"> {{ form.proxyto.errors|join:", " }} </div>
 			{% endif %}<span class="help-block">{% trans "Only IdP and IdP/SP server types are allowed" %}</span>
 		</div>
 	</div>

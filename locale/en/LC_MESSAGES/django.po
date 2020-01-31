@@ -1,0 +1,1339 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-18 10:27+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: accounts/models.py:29
+msgid "user"
+msgstr ""
+
+#: accounts/models.py:30 djnro/templates/overview/index.html:144
+msgid "users"
+msgstr ""
+
+#: accounts/views.py:106
+#, python-format
+msgid "%sUser account activated"
+msgstr ""
+
+#: djnro/settings.py:38
+msgid "Greek"
+msgstr ""
+
+#: djnro/settings.py:39
+msgid "English"
+msgstr ""
+
+#: djnro/settings.py:40
+msgid "Hungarian"
+msgstr ""
+
+#: djnro/templates/base.html:37
+#: djnro/templates/edumanage/server_details.html:4
+#: djnro/templates/edumanage/service_details.html:7
+#: djnro/templates/edumanage/welcome.html:17
+#: djnro/templates/edumanage/welcome.html:61
+#: djnro/templates/front/index.html:4
+#: djnro/templates/registration/activate.html:7
+#: djnro/templates/registration/activation_complete.html:7
+msgid "Home"
+msgstr ""
+
+#: djnro/templates/base.html:39
+#: djnro/templates/front/management_dropdown.html:4
+#: djnro/templates/front/management_dropdown.html:7
+msgid "Manage"
+msgstr ""
+
+#: djnro/templates/base.html:43
+#: djnro/templates/edumanage/services_edit.html:66
+msgid "Language"
+msgstr ""
+
+#: djnro/templates/base.html:58 djnro/templates/overview/index.html:38
+msgid "Institutions"
+msgstr ""
+
+#: djnro/templates/base.html:60 djnro/templates/front/management.html:3
+#: djnro/templates/front/management.html:9
+msgid "Management"
+msgstr ""
+
+#: djnro/templates/base.html:61 djnro/templates/front/participants.html:4
+msgid "Participants"
+msgstr ""
+
+#: djnro/templates/base.html:62 djnro/templates/front/connect.html:4
+#: djnro/templates/front/connect.html:28
+msgid "Connect to eduroam"
+msgstr ""
+
+#: djnro/templates/base.html:66 djnro/templates/edumanage/services.html:176
+msgid "Service"
+msgstr ""
+
+#: djnro/templates/base.html:68
+msgid "Closest eduroam"
+msgstr ""
+
+#: djnro/templates/base.html:69
+msgid "World eduroam"
+msgstr ""
+
+#: djnro/templates/base.html:70
+msgid "pebduroam"
+msgstr ""
+
+#: djnro/templates/base.html:71
+msgid "Closest point api"
+msgstr ""
+
+#: djnro/templates/edumanage/add_user.html:6
+#: djnro/templates/edumanage/contacts.html:22
+#: djnro/templates/edumanage/contacts_edit.html:21
+#: djnro/templates/edumanage/institution.html:22
+#: djnro/templates/edumanage/institution_edit.html:23
+#: djnro/templates/edumanage/servers.html:25
+#: djnro/templates/edumanage/services.html:28
+#: djnro/templates/edumanage/services_edit.html:66
+#: djnro/templates/overview/index.html:49
+#: djnro/templates/overview/index.html:81
+msgid "Name"
+msgstr ""
+
+#: djnro/templates/edumanage/add_user.html:14
+#: djnro/templates/edumanage/contacts.html:23
+#: djnro/templates/edumanage/contacts_edit.html:29
+#: djnro/templates/overview/index.html:48
+#: djnro/templates/registration/select_institution.html:26
+msgid "Email"
+msgstr ""
+
+#: djnro/templates/edumanage/add_user.html:22
+#: djnro/templates/edumanage/contacts.html:24
+#: djnro/templates/edumanage/contacts_edit.html:37
+msgid "Phone"
+msgstr ""
+
+#: djnro/templates/edumanage/catenroll.html:9
+msgid "CAT enroll"
+msgstr ""
+
+#: djnro/templates/edumanage/catenroll.html:24
+msgid "CAT Institution ID"
+msgstr ""
+
+#: djnro/templates/edumanage/catenroll.html:25
+msgid "CAT configuration profiles"
+msgstr ""
+
+#: djnro/templates/edumanage/catenroll.html:26
+msgid "URL/Status"
+msgstr ""
+
+#: djnro/templates/edumanage/catenroll.html:27
+#: djnro/templates/edumanage/catenroll.html:54
+msgid "CAT instance"
+msgstr ""
+
+#: djnro/templates/edumanage/catenroll.html:28
+msgid "Applier"
+msgstr ""
+
+#: djnro/templates/edumanage/catenroll.html:66
+#: djnro/templates/edumanage/contacts_edit.html:47
+#: djnro/templates/edumanage/institution_edit.html:111
+#: djnro/templates/edumanage/instrealmmon_edit.html:41
+#: djnro/templates/edumanage/monlocauthpar_edit.html:60
+#: djnro/templates/edumanage/realms_edit.html:49
+#: djnro/templates/edumanage/servers_edit.html:129
+#: djnro/templates/edumanage/services_edit.html:229
+#: djnro/templates/registration/select_institution.html:50
+msgid "Apply"
+msgstr ""
+
+#: djnro/templates/edumanage/catenroll.html:79
+#: djnro/templates/overview/index.html:50
+msgid "Status"
+msgstr ""
+
+#: djnro/templates/edumanage/catenroll.html:81
+msgid "Response"
+msgstr ""
+
+#: djnro/templates/edumanage/catenroll.html:83
+msgid "Institution Id"
+msgstr ""
+
+#: djnro/templates/edumanage/catenroll.html:84
+msgid "CAT url"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:9
+#: djnro/templates/edumanage/institution.html:46
+#: djnro/templates/edumanage/institution_edit.html:51
+#: djnro/templates/edumanage/service_details.html:138
+#: djnro/templates/edumanage/services_edit.html:113
+#: djnro/templates/edumanage/welcome.html:40
+#: djnro/templates/overview/index.html:83
+msgid "Contacts"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:25
+#: djnro/templates/edumanage/instrealmmons.html:29
+#: djnro/templates/edumanage/realms.html:26
+#: djnro/templates/edumanage/servers.html:29
+msgid "Action"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:35
+#: djnro/templates/edumanage/contacts_edit.html:8
+#: djnro/templates/edumanage/institution.html:94
+#: djnro/templates/edumanage/instrealmmon_edit.html:12
+#: djnro/templates/edumanage/instrealmmons.html:45
+#: djnro/templates/edumanage/instrealmmons.html:64
+#: djnro/templates/edumanage/monlocauthpar_edit.html:9
+#: djnro/templates/edumanage/realms.html:34
+#: djnro/templates/edumanage/realms_edit.html:10
+#: djnro/templates/edumanage/servers.html:40
+#: djnro/templates/edumanage/servers_edit.html:9
+#: djnro/templates/edumanage/services.html:44
+#: djnro/templates/edumanage/services_edit.html:13
+msgid "edit"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:35
+#: djnro/templates/edumanage/instrealmmons.html:46
+#: djnro/templates/edumanage/instrealmmons.html:65
+#: djnro/templates/edumanage/realms.html:34
+#: djnro/templates/edumanage/servers.html:40
+#: djnro/templates/edumanage/services.html:44
+msgid "delete"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:41
+msgid "Add new contact"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:47
+#: djnro/templates/edumanage/contacts.html:116
+msgid "Delete contact"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:51
+#: djnro/templates/edumanage/instrealmmons.html:94
+#: djnro/templates/edumanage/instrealmmons.html:111
+#: djnro/templates/edumanage/realms.html:53
+#: djnro/templates/edumanage/servers.html:57
+#: djnro/templates/edumanage/services.html:62
+msgid "Cancel"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:52
+#: djnro/templates/edumanage/instrealmmons.html:95
+#: djnro/templates/edumanage/instrealmmons.html:112
+#: djnro/templates/edumanage/realms.html:54
+#: djnro/templates/edumanage/servers.html:58
+#: djnro/templates/edumanage/services.html:63
+msgid "Delete"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:92
+#: djnro/templates/edumanage/instrealmmons.html:153
+#: djnro/templates/edumanage/realms.html:91
+#: djnro/templates/edumanage/servers.html:101
+#: djnro/templates/edumanage/services.html:135
+#: djnro/templates/overview/index.html:144
+#: djnro/templates/overview/index.html:192
+msgid "Display"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:92
+#: djnro/templates/edumanage/instrealmmons.html:153
+#: djnro/templates/edumanage/realms.html:91
+#: djnro/templates/edumanage/servers.html:101
+#: djnro/templates/edumanage/services.html:135
+#: djnro/templates/overview/index.html:144
+#: djnro/templates/overview/index.html:192
+msgid "All"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:92
+msgid "contacts"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:94
+#: djnro/templates/edumanage/instrealmmons.html:155
+#: djnro/templates/edumanage/realms.html:93
+#: djnro/templates/edumanage/servers.html:103
+#: djnro/templates/edumanage/services.html:137
+#: djnro/templates/overview/index.html:146
+#: djnro/templates/overview/index.html:194
+msgid "No records to display"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:96
+#: djnro/templates/edumanage/instrealmmons.html:157
+#: djnro/templates/edumanage/realms.html:95
+#: djnro/templates/edumanage/servers.html:105
+#: djnro/templates/edumanage/services.html:139
+#: djnro/templates/overview/index.html:148
+#: djnro/templates/overview/index.html:196
+msgid "Showing 0 to 0 of 0 entries"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:99
+#: djnro/templates/edumanage/instrealmmons.html:160
+#: djnro/templates/edumanage/realms.html:98
+#: djnro/templates/edumanage/servers.html:108
+#: djnro/templates/edumanage/services.html:142
+#: djnro/templates/overview/index.html:151
+#: djnro/templates/overview/index.html:199
+msgid "Search:"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:102
+#: djnro/templates/edumanage/instrealmmons.html:163
+#: djnro/templates/edumanage/realms.html:101
+#: djnro/templates/edumanage/servers.html:111
+#: djnro/templates/edumanage/services.html:145
+#: djnro/templates/overview/index.html:154
+#: djnro/templates/overview/index.html:202
+msgid "First"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:103
+#: djnro/templates/edumanage/instrealmmons.html:164
+#: djnro/templates/edumanage/realms.html:102
+#: djnro/templates/edumanage/servers.html:112
+#: djnro/templates/edumanage/services.html:146
+#: djnro/templates/overview/index.html:155
+#: djnro/templates/overview/index.html:203
+msgid "Previous"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:104
+#: djnro/templates/edumanage/instrealmmons.html:165
+#: djnro/templates/edumanage/realms.html:103
+#: djnro/templates/edumanage/servers.html:113
+#: djnro/templates/edumanage/services.html:147
+#: djnro/templates/overview/index.html:156
+#: djnro/templates/overview/index.html:204
+msgid "Next"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:105
+#: djnro/templates/edumanage/instrealmmons.html:166
+#: djnro/templates/edumanage/realms.html:104
+#: djnro/templates/edumanage/servers.html:114
+#: djnro/templates/edumanage/services.html:148
+#: djnro/templates/overview/index.html:157
+#: djnro/templates/overview/index.html:205
+msgid "Last"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:115
+msgid "You are about to delete contact"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts.html:115
+#: djnro/templates/edumanage/instrealmmons.html:176
+#: djnro/templates/edumanage/instrealmmons.html:206
+#: djnro/templates/edumanage/services.html:157
+msgid "Press Delete to proceed or Cancel to cancel deletion"
+msgstr ""
+
+#: djnro/templates/edumanage/contacts_edit.html:8
+msgid "Add Contact"
+msgstr ""
+
+#: djnro/templates/edumanage/institution.html:8
+#: djnro/templates/edumanage/welcome.html:21
+#: djnro/templates/overview/index.html:51
+#: djnro/templates/registration/activate_edit.html:36
+#: djnro/templates/registration/select_institution.html:39
+msgid "Institution"
+msgstr ""
+
+#: djnro/templates/edumanage/institution.html:28
+#: djnro/templates/edumanage/institution_edit.html:29
+#: djnro/templates/edumanage/instrealmmons.html:26
+#: djnro/templates/edumanage/server_details.html:26
+#: djnro/templates/edumanage/servers.html:26
+#: djnro/templates/edumanage/servers_edit.html:25
+#: djnro/templates/overview/index.html:82
+msgid "Type"
+msgstr ""
+
+#: djnro/templates/edumanage/institution.html:34
+#: djnro/templates/edumanage/institution_edit.html:35
+#: djnro/templates/edumanage/services_edit.html:83
+msgid "Address Street"
+msgstr ""
+
+#: djnro/templates/edumanage/institution.html:40
+#: djnro/templates/edumanage/institution_edit.html:43
+#: djnro/templates/edumanage/services_edit.html:93
+msgid "Address City"
+msgstr ""
+
+#: djnro/templates/edumanage/institution.html:54
+#: djnro/templates/edumanage/institution_edit.html:62
+#: djnro/templates/edumanage/service_details.html:193
+#: djnro/templates/edumanage/services_edit.html:193
+msgid "Urls"
+msgstr ""
+
+#: djnro/templates/edumanage/institution.html:64
+#: djnro/templates/edumanage/institution_edit.html:83
+msgid "Domain Name"
+msgstr ""
+
+#: djnro/templates/edumanage/institution.html:72
+msgid "Number User"
+msgstr ""
+
+#: djnro/templates/edumanage/institution.html:79
+#: djnro/templates/edumanage/institution_edit.html:102
+msgid "Number of IDs"
+msgstr ""
+
+#: djnro/templates/edumanage/institution.html:89
+#: djnro/templates/edumanage/institution_edit.html:9
+#: djnro/templates/edumanage/server_details.html:83
+#: djnro/templates/edumanage/service_details.html:202
+#: djnro/templates/edumanage/welcome.html:75
+msgid "Edit"
+msgstr ""
+
+#: djnro/templates/edumanage/institution.html:94
+msgid "No institution details defined yet for"
+msgstr ""
+
+#: djnro/templates/edumanage/institution.html:97
+msgid "No institution defined"
+msgstr ""
+
+#: djnro/templates/edumanage/institution_edit.html:93
+msgid "Number of Users"
+msgstr ""
+
+#: djnro/templates/edumanage/institution_edit.html:123
+#: djnro/templates/edumanage/services_edit.html:239
+msgid "Add User"
+msgstr ""
+
+#: djnro/templates/edumanage/institution_edit.html:129
+#: djnro/templates/edumanage/services.html:85
+#: djnro/templates/edumanage/services_edit.html:245
+msgid "Close"
+msgstr ""
+
+#: djnro/templates/edumanage/institution_edit.html:130
+msgid "Save changes"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmon_edit.html:12
+msgid "Monitored realm"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmon_edit.html:12
+msgid "Add Monitored Realm"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmon_edit.html:23
+#: djnro/templates/edumanage/instrealmmons.html:25
+#: djnro/templates/edumanage/monlocauthpar_edit.html:20
+#: djnro/templates/edumanage/realms.html:24
+#: djnro/templates/edumanage/realms_edit.html:31
+msgid "Realm"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmon_edit.html:31
+msgid "Monitoring Method"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmons.html:9
+#: djnro/templates/edumanage/welcome.html:37
+msgid "Monitored Realms"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmons.html:31
+msgid "Parameters"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmons.html:71
+msgid "add"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmons.html:82
+msgid "Add monitored realm"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmons.html:89
+#: djnro/templates/edumanage/instrealmmons.html:106
+msgid "Delete monitored realm"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmons.html:153
+#: djnro/templates/edumanage/realms.html:91
+msgid "realms"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmons.html:176
+msgid "You are about to delete monitored realm (and its parameters if any)"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmons.html:177
+msgid "Delete Monitored Realm"
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmons.html:206
+msgid "You are about to delete monitored realm parameters for "
+msgstr ""
+
+#: djnro/templates/edumanage/instrealmmons.html:207
+msgid "Delete Monitored Realm Parameters"
+msgstr ""
+
+#: djnro/templates/edumanage/monlocauthpar_edit.html:9
+msgid "parameters"
+msgstr ""
+
+#: djnro/templates/edumanage/monlocauthpar_edit.html:9
+msgid "Add Monitored Realm Parameters"
+msgstr ""
+
+#: djnro/templates/edumanage/monlocauthpar_edit.html:26
+msgid "EAP Method"
+msgstr ""
+
+#: djnro/templates/edumanage/monlocauthpar_edit.html:34
+msgid "EAP2 Method"
+msgstr ""
+
+#: djnro/templates/edumanage/monlocauthpar_edit.html:42
+#: djnro/templates/overview/index.html:47
+msgid "Username"
+msgstr ""
+
+#: djnro/templates/edumanage/monlocauthpar_edit.html:50
+msgid "Password"
+msgstr ""
+
+#: djnro/templates/edumanage/realms.html:9
+#: djnro/templates/edumanage/welcome.html:34
+msgid "Realms"
+msgstr ""
+
+#: djnro/templates/edumanage/realms.html:25
+msgid "Server(s)"
+msgstr ""
+
+#: djnro/templates/edumanage/realms.html:41
+msgid "Add new realm"
+msgstr ""
+
+#: djnro/templates/edumanage/realms.html:48
+msgid "Delete Realm"
+msgstr ""
+
+#: djnro/templates/edumanage/realms_edit.html:10
+msgid "Add Realm"
+msgstr ""
+
+#: djnro/templates/edumanage/realms_edit.html:39
+msgid "Proxy to Servers"
+msgstr ""
+
+#: djnro/templates/edumanage/realms_edit.html:43 edumanage/forms.py:157
+#: edumanage/models.py:205
+msgid "Only IdP and IdP/SP server types are allowed"
+msgstr ""
+
+#: djnro/templates/edumanage/server_details.html:5
+#: djnro/templates/edumanage/servers.html:12
+#: djnro/templates/edumanage/welcome.html:31
+msgid "Servers"
+msgstr ""
+
+#: djnro/templates/edumanage/server_details.html:32
+#: djnro/templates/edumanage/servers_edit.html:55
+msgid "Label"
+msgstr ""
+
+#: djnro/templates/edumanage/server_details.html:38
+#: djnro/templates/edumanage/servers_edit.html:35
+msgid "Address Family"
+msgstr ""
+
+#: djnro/templates/edumanage/server_details.html:44
+msgid "Host"
+msgstr ""
+
+#: djnro/templates/edumanage/server_details.html:51
+#: djnro/templates/edumanage/servers_edit.html:66
+msgid "RADIUS Packet Types"
+msgstr ""
+
+#: djnro/templates/edumanage/server_details.html:57
+#: djnro/templates/edumanage/servers.html:27
+#: djnro/templates/edumanage/servers_edit.html:76
+msgid "Authentication Port"
+msgstr ""
+
+#: djnro/templates/edumanage/server_details.html:63
+#: djnro/templates/edumanage/servers_edit.html:86
+msgid "Accounting Port"
+msgstr ""
+
+#: djnro/templates/edumanage/server_details.html:70
+msgid "Status Server"
+msgstr ""
+
+#: djnro/templates/edumanage/server_details.html:76
+#: djnro/templates/edumanage/servers.html:28
+#: djnro/templates/edumanage/servers_edit.html:117
+msgid "Protocol"
+msgstr ""
+
+#: djnro/templates/edumanage/servers.html:46
+msgid "Add new server"
+msgstr ""
+
+#: djnro/templates/edumanage/servers.html:52
+msgid "Delete Server"
+msgstr ""
+
+#: djnro/templates/edumanage/servers.html:101
+msgid "servers"
+msgstr ""
+
+#: djnro/templates/edumanage/servers_edit.html:9
+msgid "Add Server"
+msgstr ""
+
+#: djnro/templates/edumanage/servers_edit.html:45
+msgid "Hostname"
+msgstr ""
+
+#: djnro/templates/edumanage/servers_edit.html:97
+msgid "Status-Server"
+msgstr ""
+
+#: djnro/templates/edumanage/servers_edit.html:107
+msgid "Secret"
+msgstr ""
+
+#: djnro/templates/edumanage/service_details.html:8
+#: djnro/templates/edumanage/services.html:14
+#: djnro/templates/edumanage/welcome.html:27
+msgid "Locations"
+msgstr ""
+
+#: djnro/templates/edumanage/service_details.html:105
+#: djnro/templates/edumanage/services_edit.html:31
+msgid "Location"
+msgstr ""
+
+#: djnro/templates/edumanage/service_details.html:114
+#: djnro/templates/edumanage/services_edit.html:61
+msgid "Location Name"
+msgstr ""
+
+#: djnro/templates/edumanage/service_details.html:123
+#: djnro/templates/edumanage/services.html:29
+#: djnro/templates/overview/index.html:84
+msgid "Address"
+msgstr ""
+
+#: djnro/templates/edumanage/service_details.html:146
+#: djnro/templates/edumanage/services.html:31
+#: djnro/templates/edumanage/services_edit.html:123
+msgid "Encryption Level"
+msgstr ""
+
+#: djnro/templates/edumanage/service_details.html:152
+#: djnro/templates/edumanage/services_edit.html:133
+msgid "Port Restrict"
+msgstr ""
+
+#: djnro/templates/edumanage/service_details.html:159
+#: djnro/templates/edumanage/services_edit.html:143
+msgid "Transparent Proxy"
+msgstr ""
+
+#: djnro/templates/edumanage/service_details.html:180
+#: djnro/templates/edumanage/services_edit.html:173
+msgid "AP number"
+msgstr ""
+
+#: djnro/templates/edumanage/service_details.html:187
+#: djnro/templates/edumanage/services_edit.html:183
+msgid "Wired"
+msgstr ""
+
+#: djnro/templates/edumanage/services.html:30
+msgid "SSID"
+msgstr ""
+
+#: djnro/templates/edumanage/services.html:32
+msgid "AP no"
+msgstr ""
+
+#: djnro/templates/edumanage/services.html:33
+msgid "Actions"
+msgstr ""
+
+#: djnro/templates/edumanage/services.html:57
+#: djnro/templates/edumanage/services.html:158
+msgid "Delete Location"
+msgstr ""
+
+#: djnro/templates/edumanage/services.html:71
+msgid "Add a new location"
+msgstr ""
+
+#: djnro/templates/edumanage/services.html:80
+msgid "Location Details"
+msgstr ""
+
+#: djnro/templates/edumanage/services.html:135
+msgid "locations"
+msgstr ""
+
+#: djnro/templates/edumanage/services.html:157
+msgid "You are about to delete location"
+msgstr ""
+
+#: djnro/templates/edumanage/services.html:176
+msgid "successfully deleted"
+msgstr ""
+
+#: djnro/templates/edumanage/services_edit.html:15
+msgid "Add Location"
+msgstr ""
+
+#: djnro/templates/edumanage/services_edit.html:38
+msgid "Search location"
+msgstr ""
+
+#: djnro/templates/edumanage/services_edit.html:45
+msgid "Update Map"
+msgstr ""
+
+#: djnro/templates/edumanage/services_edit.html:48
+msgid "Current Location"
+msgstr ""
+
+#: djnro/templates/edumanage/services_edit.html:201
+msgid "url"
+msgstr ""
+
+#: djnro/templates/edumanage/services_edit.html:202
+msgid "type"
+msgstr ""
+
+#: djnro/templates/edumanage/services_edit.html:203
+msgid "language"
+msgstr ""
+
+#: djnro/templates/edumanage/services_edit.html:246
+msgid "Save Changes"
+msgstr ""
+
+#: djnro/templates/edumanage/welcome.html:44
+msgid "eduroam CAT"
+msgstr ""
+
+#: djnro/templates/edumanage/welcome.html:61
+msgid "Service Locations"
+msgstr ""
+
+#: djnro/templates/edumanage/welcome.html:69
+msgid "No services defined yet"
+msgstr ""
+
+#: djnro/templates/edumanage/welcome.html:71
+msgid "Add new service"
+msgstr ""
+
+#: djnro/templates/front/api.html:3
+msgid "Closest Point API"
+msgstr ""
+
+#: djnro/templates/front/api.html:10
+msgid "Closest point API"
+msgstr ""
+
+#: djnro/templates/front/api.html:13
+msgid ""
+"Since we collect information from eduroam.org about the available eduroam "
+"points, we developed the closest point service API, which handles locating "
+"the closest eduroam service location."
+msgstr ""
+
+#: djnro/templates/front/api.html:14
+msgid ""
+"The API receives the current location coordinates in a GET request, "
+"calculates the closest point through server-side triangulation and returns a "
+"JSON reply with its’ coordinates and a detailed description."
+msgstr ""
+
+#: djnro/templates/front/api.html:16
+msgid ""
+"Based on this API, we developed the closest point web page that allows users "
+"to find the closest eduroam location or a location they search for."
+msgstr ""
+
+#: djnro/templates/front/api.html:17
+msgid ""
+"Potentials are limitless! You can build your own application either it is "
+"web or mobile or a widget for a wearable device."
+msgstr ""
+
+#: djnro/templates/front/connect.html:18
+#, python-format
+msgid ""
+"For full functionality of this site it is necessary to enable JavaScript. "
+"Here are the %(a_enablejs)sinstructions how to enable JavaScript in your web "
+"browser"
+msgstr ""
+
+#: djnro/templates/front/connect.html:29
+msgid ""
+"Find instructions, contacts and tools to help you securely connect to eduroam"
+msgstr ""
+
+#: djnro/templates/front/connect.html:33
+#, python-format
+msgid "Search for your institution in %(COUNTRY_NAME)s"
+msgstr ""
+
+#: djnro/templates/front/connect.html:45
+#, python-format
+msgid "Show nearest %(span_hiddenxs)sinstitutions%(span_close)s"
+msgstr ""
+
+#: djnro/templates/front/connect.html:48
+#, python-format
+msgid "Showing nearest %(span_hiddenxs)sinstitutions%(span_close)s"
+msgstr ""
+
+#: djnro/templates/front/connect.html:57
+#, python-format
+msgid "Find %(span_hiddenxs)sinstitutions%(span_close)s worldwide"
+msgstr ""
+
+#: djnro/templates/front/connect.html:79
+msgid "See info (instructions, contacts) for this institution"
+msgstr ""
+
+#: djnro/templates/front/connect.html:108
+#: djnro/templates/front/connect.html:140
+msgid "Loading..."
+msgstr ""
+
+#: djnro/templates/front/connect.html:121
+#: djnro/templates/front/connect.html:145
+msgid "Error"
+msgstr ""
+
+#: djnro/templates/front/connect.html:122
+#: djnro/templates/front/connect.html:146
+#: djnro/templates/front/connect.html:192
+msgid "Request failed, please reload the page"
+msgstr ""
+
+#: djnro/templates/front/connect.html:151
+msgid "No device match, please select a different platform"
+msgstr ""
+
+#: djnro/templates/front/connect.html:159
+#: djnro/templates/front/connect.html:173
+msgid "Continue"
+msgstr ""
+
+#: djnro/templates/front/connect.html:164
+#, python-format
+msgid ""
+"The institution administrator has specified this device should be configured "
+"with resources provided on a local page: %(redirect_link)s If you continue "
+"you will be redirected there."
+msgstr ""
+
+#: djnro/templates/front/connect.html:177
+msgid "Download"
+msgstr ""
+
+#: djnro/templates/front/connect.html:178
+msgid "Generating..."
+msgstr ""
+
+#: djnro/templates/front/connect.html:179
+msgid "Downloading"
+msgstr ""
+
+#: djnro/templates/front/connect.html:180
+msgid "Failed"
+msgstr ""
+
+#: djnro/templates/front/connect.html:184
+msgid "The downloaded profile will be digitally signed by GÉANT Association"
+msgstr ""
+
+#: djnro/templates/front/connect.html:185
+msgid "Signed"
+msgstr ""
+
+#: djnro/templates/front/connect.html:186
+msgid "The downloaded profile will display messages in this language"
+msgstr ""
+
+#: djnro/templates/front/connect.html:196
+msgid ""
+"Only install profiles that match your institution (and user group). When "
+"prompted for your username, enter your fully qualified username@realm, "
+"unless specifically instructed by your institution."
+msgstr ""
+
+#: djnro/templates/front/connect.html:210
+msgid "Information &amp; Usage"
+msgstr ""
+
+#: djnro/templates/front/connect.html:221
+msgid ""
+"Once your system is successfully configured, and after you enter your "
+"credentials (when prompted, upon installation or first connection), the "
+"device will automatically connect whenever it is in the vicinity of an "
+"eduroam hotspot."
+msgstr ""
+
+#: djnro/templates/front/connect.html:232
+msgid "Other platforms"
+msgstr ""
+
+#: djnro/templates/front/connect.html:263
+msgid ""
+"If you encounter problems, you can obtain direct assistance from your home "
+"organisation:"
+msgstr ""
+
+#: djnro/templates/front/connect.html:271
+msgid ""
+"If you encounter problems you can ask for help at your home institution."
+msgstr ""
+
+#: djnro/templates/front/connect.html:283
+#, python-format
+msgid ""
+"You may also subscribe to the %(a_catuserslist)susers mailing list"
+"%(a_close)s to report (in English) issues related to %(link_eduroamcat)s."
+msgstr ""
+
+#: djnro/templates/front/connect.html:299
+#, python-format
+msgid "%(link_eduroamcat)s service is provided by %(linkimg_geant)s"
+msgstr ""
+
+#: djnro/templates/front/connect.html:303
+#, python-format
+msgid ""
+"This site provides access to CAT data with respect to the service "
+"%(a_catapitou)sterms of use"
+msgstr ""
+
+#: djnro/templates/front/geolocate.html:4
+msgid "Closest Access Point"
+msgstr ""
+
+#: djnro/templates/front/index.html:22
+msgid ""
+"You might be wondering about the location of the closest eduroam access "
+"points in order to be able to connect to eduroam. We provide a service and "
+"an api in order to help you find the closest eduroam access point."
+msgstr ""
+
+#: djnro/templates/front/index.html:41
+msgid ""
+"eduroam (education roaming) is the secure, world-wide roaming access service "
+"developed for the international research and education community. It allows "
+"students, researchers and staff from participating institutions to obtain "
+"Internet connectivity across campus and when visiting other participating "
+"institutions by simply opening their laptop."
+msgstr ""
+
+#: djnro/templates/front/index.html:54
+msgid ""
+"To use eduroam wifi you will need to setup your laptop or smartphone. As end-"
+"user you will only be able to use eduroam if your institution provides "
+"electronic identity (e.g. account for network access). In that case you will "
+"need to contact your administrator and ask for an account. You (or your "
+"network administrator) will have to configure your computer to enable "
+"eduroam access."
+msgstr ""
+
+#: djnro/templates/front/management.html:12
+msgid ""
+"The management application provides an interface for administrators of "
+"federation member institutions to maintain the data that is necessary for "
+"participating in the federation."
+msgstr ""
+
+#: djnro/templates/front/management.html:13
+msgid ""
+"Administrators can log in using either Social Networks or the AAI Federation:"
+msgstr ""
+
+#: djnro/templates/front/management.html:16
+msgid ""
+"Social networks that have been enabled for authenticating users to the "
+"management application are listed under the <b>Manage</b> drop-down menu. "
+"Once authenticated, a user may need to assert any missing information that "
+"is required by the application (such as an e-mail address). After that, the "
+"user can proceed with activation."
+msgstr ""
+
+#: djnro/templates/front/management.html:19
+msgid "Authentication and authorization are carried out through a"
+msgstr ""
+
+#: djnro/templates/front/management.html:20
+msgid ""
+"The following attributes are required for administrators and must be "
+"released by their home IdPs to the SP"
+msgstr ""
+
+#: djnro/templates/front/management.html:20
+msgid "according to the"
+msgstr ""
+
+#: djnro/templates/front/management.html:20
+msgid "policy and procedures documentation"
+msgstr ""
+
+#: djnro/templates/front/management.html:20
+msgid "provided by the"
+msgstr ""
+
+#: djnro/templates/front/management.html:22
+msgid "Attribute"
+msgstr ""
+
+#: djnro/templates/front/management.html:22
+msgid "Description"
+msgstr ""
+
+#: djnro/templates/front/management.html:24
+msgid ""
+"Provides a string that uniquely identifies an administrator in the "
+"management application."
+msgstr ""
+
+#: djnro/templates/front/management.html:26
+msgid "A specific URN value must be provided to authorize an administrator:"
+msgstr ""
+
+#: djnro/templates/front/management.html:28
+msgid ""
+"The e-mail address (one or more) of the administrator. It is used for "
+"notifications from the management application. It may also be used for "
+"further communication, with prior consent."
+msgstr ""
+
+#: djnro/templates/front/management.html:29
+msgid "The person's first name."
+msgstr ""
+
+#: djnro/templates/front/management.html:30
+msgid "The person's last name."
+msgstr ""
+
+#: djnro/templates/front/management.html:34
+msgid ""
+"Once attribute release is setup properly an administrator can login to the "
+"management application."
+msgstr ""
+
+#: djnro/templates/front/management.html:37
+msgid ""
+"After the first login, administrators are asked to associate their account "
+"with the institution they want to manage. Their choice must then be ratified "
+"by the operators of their management application. Following that, they will "
+"be notified through e-mail and they will then be able to start using the "
+"management application."
+msgstr ""
+
+#: djnro/templates/front/management.html:40
+msgid ""
+"Among other things, the metadata provided by administrators through the "
+"management application are used to compile database data for the federation"
+msgstr ""
+
+#: djnro/templates/front/participants.html:12
+msgid "Participating Institutions"
+msgstr ""
+
+#: djnro/templates/front/participants.html:14
+msgid "In"
+msgstr ""
+
+#: djnro/templates/front/participants.html:14
+msgid "eduroam is provided by the following institutions/organizations"
+msgstr ""
+
+#: djnro/templates/front/world.html:11
+msgid "eduroam worldwide"
+msgstr ""
+
+#: djnro/templates/overview/index.html:17
+msgid "Overview"
+msgstr ""
+
+#: djnro/templates/overview/index.html:20
+msgid "Logout"
+msgstr ""
+
+#: djnro/templates/overview/index.html:34
+msgid "Users - Institutions"
+msgstr ""
+
+#: djnro/templates/overview/index.html:37
+msgid "Users"
+msgstr ""
+
+#: djnro/templates/overview/index.html:63
+msgid "Active"
+msgstr ""
+
+#: djnro/templates/overview/index.html:65
+msgid "Inactive"
+msgstr ""
+
+#: djnro/templates/overview/index.html:65
+msgid "Key Expired"
+msgstr ""
+
+#: djnro/templates/overview/index.html:85
+msgid "Admin Users"
+msgstr ""
+
+#: djnro/templates/overview/index.html:192
+msgid "institutions"
+msgstr ""
+
+#: djnro/templates/partial/footer.html:10
+msgid "If you have any questions or need help, contact"
+msgstr ""
+
+#: djnro/templates/partial/footer.html:12
+msgid "This is a service provided by"
+msgstr ""
+
+#: djnro/templates/registration/activate.html:3
+#: djnro/templates/registration/activation_complete.html:3
+#: djnro/templates/registration/activation_complete.html:25
+msgid "Activation Complete"
+msgstr ""
+
+#: djnro/templates/registration/activate.html:25
+msgid "Activation Status"
+msgstr ""
+
+#: djnro/templates/registration/activate.html:30
+msgid "succesfully activated"
+msgstr ""
+
+#: djnro/templates/registration/activate.html:32
+msgid "The user has probably been already activated."
+msgstr ""
+
+#: djnro/templates/registration/activate_edit.html:28
+msgid "User"
+msgstr ""
+
+#: djnro/templates/registration/activate_edit.html:47
+msgid "Activate"
+msgstr ""
+
+#: djnro/templates/registration/activation_complete.html:29
+msgid "The user will be notified about his/her account activation"
+msgstr ""
+
+#: edumanage/decorators.py:29 edumanage/views.py:1671 edumanage/views.py:1822
+#, python-format
+msgid ""
+"User account <strong>%(username)s</strong> is pending activation. "
+"Administrators have been notified and will activate this account within the "
+"next days. <br>If this account has remained inactive for a long time contact "
+"your technical coordinator or %(nroname)s Helpdesk"
+msgstr ""
+
+#: edumanage/fields.py:13
+msgid ""
+"Enter at least one e-mail address. Multiple email addresses Should be "
+"separated with semicolon (;)"
+msgstr ""
+
+#: edumanage/fields.py:20
+#, python-format
+msgid "%s is not a valid e-mail address."
+msgstr ""
+
+#: edumanage/forms.py:88 edumanage/forms.py:99 edumanage/forms.py:110
+msgid "The Type field is required to validate this field."
+msgstr ""
+
+#: edumanage/forms.py:94 edumanage/forms.py:105 edumanage/forms.py:116
+#: edumanage/forms.py:135 edumanage/forms.py:160
+msgid "This field is required."
+msgstr ""
+
+#: edumanage/forms.py:132
+msgid "Invalid network address/hostname format"
+msgstr ""
+
+#: edumanage/forms.py:183 edumanage/forms.py:185
+msgid "Fill in at least one location name in English"
+msgstr ""
+
+#: edumanage/forms.py:211 edumanage/forms.py:213
+msgid "Fill in at least the info url"
+msgstr ""
+
+#: edumanage/management/commands/importcsv.py:50
+msgid "Error in usage. See help"
+msgstr ""
+
+#: edumanage/models.py:232 edumanage/models.py:321
+msgid "Descriptive label"
+msgstr ""
+
+#: edumanage/models.py:235 edumanage/models.py:328
+msgid "IP address | FQDN hostname"
+msgstr ""
+
+#: edumanage/models.py:239
+msgid "Default for RADIUS: 1812"
+msgstr ""
+
+#: edumanage/models.py:240
+msgid "Default for RADIUS: 1813"
+msgstr ""
+
+#: edumanage/models.py:241
+msgid "Do you accept Status-Server requests?"
+msgstr ""
+
+#: edumanage/models.py:252
+#, python-format
+msgid "Server: %(servername)s, Type: %(ertype)s"
+msgstr ""
+
+#: edumanage/models.py:274
+#, python-format
+msgid ""
+"You cannot change this server to %(ertype)s (it is used by realms %(realms)s)"
+msgstr ""
+
+#: edumanage/models.py:340
+#, python-format
+msgid "Monitored Realm: %(monrealm)s, Proxyback Client: %(servername)s"
+msgstr ""
+
+#: edumanage/models.py:383
+#, python-format
+msgid ""
+"Monitored Realm: %(monrealm)s, EAP Method: %(eapmethod)s, Phase 2: "
+"%(phase2)s, Username: %(username)s"
+msgstr ""
+
+#: edumanage/models.py:430
+#, python-format
+msgid "Institution: %(inst)s, Service Location: %(locname)s"
+msgstr ""
+
+#: edumanage/models.py:504
+msgid ""
+"The primary, registered domain name for your institution, eg. example.com."
+"<br>This is used to derive the Operator-Name attribute according to RFC5580, "
+"par.4.1, using the REALM namespace."
+msgstr ""
+
+#: edumanage/models.py:507
+msgid ""
+"Number of users (individuals) that are eligible to participate in eduroam "
+"service"
+msgstr ""
+
+#: edumanage/models.py:508
+msgid ""
+"Number of issued e-identities (credentials) that may be used for "
+"authentication in eduroam service"
+msgstr ""
+
+#: edumanage/models.py:516
+#, python-format
+msgid "Institution: %(inst)s, Type: %(ertype)s"
+msgstr ""
+
+#: edumanage/models.py:547
+#, python-format
+msgid "Country: %(country)s, NRO: %(orgname)s"
+msgstr ""
+
+#: edumanage/models.py:588
+#, python-format
+msgid ""
+"Country: %(country)s, NRO: %(orgname)s, Institutions: %(inst)s, IdPs: "
+"%(idp)s, SPs: %(sp)s, IdPSPs: %(idpsp)s, Users: %(numuser)s, Identities: "
+"%(numid)s"
+msgstr ""
+
+#: edumanage/views.py:1610
+msgid ""
+"Your idP should release the eduPersonPrincipalName attribute towards this "
+"service<br>"
+msgstr ""
+
+#: edumanage/views.py:1616
+msgid ""
+"Your idP should release an appropriate eduPersonEntitlement attribute "
+"towards this service<br>"
+msgstr ""
+
+#: edumanage/views.py:1621
+msgid "Your idP should release the mail attribute towards this service"
+msgstr ""
+
+#: edumanage/views.py:1687
+#, python-format
+msgid ""
+"Something went wrong during user authentication. Contact your administrator "
+"%s"
+msgstr ""
+
+#: edumanage/views.py:1696
+#, python-format
+msgid "Invalid login procedure. Error: %s"
+msgstr ""
+
+#: edumanage/views.py:1804
+msgid ""
+"Violation warning: User account is already associated with an institution."
+"The event has been logged and our administrators will be notified about it"
+msgstr ""
